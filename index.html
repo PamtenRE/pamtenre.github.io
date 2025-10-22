@@ -30,13 +30,45 @@
   <main>
     <section id="repos">
       <h3>🗂️ Repositories & Teams</h3>
-      <ul>
-        <li><b>Frontend (React):</b> Mohit / Nandini</li>
-        <li><b>Backend (Python):</b> Mukund / Rachana</li>
-        <li><b>Backend (Java):</b> Taruni / Vamshri</li>
-        <li><b>Azure Infra:</b> Satya / Swetha</li>
-        <li><b>Common Libs:</b> Shared by all</li>
-      </ul>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Repository</th>
+              <th>Description</th>
+              <th>Maintained By</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>pamten-re-frontend-react</code></td>
+              <td>React frontend application</td>
+              <td><b>Team A — Mohit / Nandini</b></td>
+            </tr>
+            <tr>
+              <td><code>pamten-re-backend-python</code></td>
+              <td>Python backend services</td>
+              <td><b>Team B & C — Mukund / Rachana</b></td>
+            </tr>
+            <tr>
+              <td><code>pamten-re-backend-java</code></td>
+              <td>Java backend microservices</td>
+              <td><b>Team A — Taruni / Vamshri</b></td>
+            </tr>
+            <tr>
+              <td><code>pamten-re-azure-infra</code></td>
+              <td>Azure Infrastructure as Code (ARM/Bicep/Terraform, pipelines)</td>
+              <td><b>Team A — Satya / Swetha</b></td>
+            </tr>
+            <tr>
+              <td><code>pamten-re-common-libs</code></td>
+              <td>Shared libraries and utilities</td>
+              <td>Cross-team usage</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="branching">
@@ -57,7 +89,7 @@
         <li>After approval and checks, merge your PR.</li>
       </ol>
       <p>
-        <b>Feature/*</b> → <b>Develop</b> → auto-deploys to <b>DEV</b> environment in Azure.<br />
+        <b>Develop</b> → auto-deploys to <b>DEV</b> environment in Azure.<br />
         <b>Develop</b> → <b>Master</b> (or <b>Release</b>) → <b>PROD</b>.
       </p>
     </section>
