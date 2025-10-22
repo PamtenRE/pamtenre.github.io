@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecruitEdge Repository Guidelines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚀 RecruitEdge Project</h1>
+    <h2>Repository Guidelines & Branching Process</h2>
+  </header>
+
+  <main>
+    <section>
+      <h3>🗂️ Repositories & Teams</h3>
+      <ul>
+        <li><b>Frontend (React):</b> Mohit / Nandini</li>
+        <li><b>Backend (Python):</b> Mukund / Rachana</li>
+        <li><b>Backend (Java):</b> Taruni / Vamshri</li>
+        <li><b>Azure Infra:</b> Satya / Swetha</li>
+        <li><b>Common Libs:</b> Shared by all</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>🌿 Branching Strategy</h3>
+      <p>
+        Default branch: <code>develop</code><br />
+        Create new feature branches from it using:
+      </p>
+      <pre><code>feature/&lt;component-name&gt;</code></pre>
+      <p>Example: <code>feature/login-ui</code> or <code>feature/resume-upload</code></p>
+    </section>
+
+    <section>
+      <h3>🔁 Pull Request & Merge Process</h3>
+      <ol>
+        <li>Open a PR from your <code>feature/&lt;component&gt;</code> branch into <code>develop</code>.</li>
+        <li>Any teammate from your repo can review and approve the PR.</li>
+        <li>After approval and checks, merge your PR.</li>
+      </ol>
+      <p>
+        <b>Develop</b> → auto-deploys to <b>DEV</b> environment in Azure.<br />
+        <b>Develop</b> → <b>Master</b> (or <b>Release</b>) → <b>PROD</b>.
+      </p>
+    </section>
+
+    <section>
+      <h3>✅ Best Practices</h3>
+      <ul>
+        <li>Never push directly to <code>develop</code> or <code>master</code>.</li>
+        <li>Keep commits clean and descriptive.</li>
+        <li>Pull latest <code>develop</code> before creating new branches.</li>
+        <li>Test locally before opening a PR.</li>
+        <li>Use small, focused PRs for easier reviews.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Maintained by <b>Vinay Kiran Bhavanam</b> — Data Engineer @ Pamten</p>
+    </footer>
+  </main>
+</body>
+</html>
