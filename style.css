@@ -1,24 +1,61 @@
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
   margin: 0;
-  padding: 0 20px;
   background-color: #f9f9fb;
   color: #222;
   line-height: 1.6;
 }
-header {
-  text-align: center;
-  padding: 30px 10px;
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #004aad;
   color: white;
-  border-radius: 0 0 12px 12px;
+  padding: 10px 30px;
+  flex-wrap: wrap;
 }
-h1 { margin-bottom: 5px; }
-h2 { font-weight: normal; opacity: 0.9; }
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.navbar img {
+  height: 28px;
+}
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+  transition: opacity 0.2s ease-in-out;
+}
+.navbar nav a:hover {
+  opacity: 0.8;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #004aad, #0077ff);
+  color: white;
+  border-radius: 0 0 16px 16px;
+}
+.hero h1 { margin-bottom: 5px; }
+.hero h2 { font-weight: 400; opacity: 0.9; }
+
+/* Content */
+main {
+  padding: 20px;
+}
 section {
   background: white;
   margin: 20px auto;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   max-width: 900px;
@@ -29,9 +66,26 @@ code, pre {
   padding: 2px 6px;
   font-family: monospace;
 }
+pre {
+  padding: 10px;
+  overflow-x: auto;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  margin: 30px 0;
+  margin: 40px 0;
   font-size: 0.9em;
   color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar nav {
+    margin-top: 10px;
+  }
 }
